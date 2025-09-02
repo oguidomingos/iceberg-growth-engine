@@ -17,26 +17,41 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Iceberg theme colors */
+    --ice-dark: 201 95% 11%;        /* #051C36 */
+    --ice-accent: 207 96% 51%;      /* #0A7BFC */
+    --ice-mid: 207 93% 60%;         /* #3F94F8 */
+    --ice-light: 202 82% 82%;       /* #ADD8F2 */
+    
+    --primary: 207 96% 51%;         /* ice-accent */
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 202 82% 82%;       /* ice-light */
+    --secondary-foreground: 201 95% 11%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 202 50% 95%;
+    --muted-foreground: 201 30% 40%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 207 93% 60%;          /* ice-mid */
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 202 30% 90%;
+    --input: 202 30% 90%;
+    --ring: 207 96% 51%;
 
-    --radius: 0.5rem;
+    /* Gradients */
+    --gradient-ocean: linear-gradient(135deg, hsl(var(--ice-light)) 0%, hsl(var(--ice-mid)) 50%, hsl(var(--ice-accent)) 100%);
+    --gradient-ice: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--ice-light) / 0.1) 100%);
+    --gradient-deep: linear-gradient(135deg, hsl(var(--ice-accent)) 0%, hsl(var(--ice-dark)) 100%);
+    
+    /* Glass effects */
+    --glass-bg: hsl(var(--background) / 0.8);
+    --glass-border: hsl(var(--ice-light) / 0.2);
+    
+    --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +115,16 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-montserrat;
+  }
+}
+
+/* Custom animations */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }

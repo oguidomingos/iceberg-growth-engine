@@ -52,6 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
+				// Iceberg theme colors
+				'ice-dark': 'hsl(var(--ice-dark))',
+				'ice-accent': 'hsl(var(--ice-accent))',
+				'ice-mid': 'hsl(var(--ice-mid))',
+				'ice-light': 'hsl(var(--ice-light))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
@@ -88,7 +93,17 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'float': 'float 3s ease-in-out infinite',
+				'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+			},
+			backgroundImage: {
+				'gradient-ocean': 'var(--gradient-ocean)',
+				'gradient-ice': 'var(--gradient-ice)',
+				'gradient-deep': 'var(--gradient-deep)',
+			},
+			fontFamily: {
+				'montserrat': ['Montserrat', 'sans-serif'],
 			}
 		}
 	},
