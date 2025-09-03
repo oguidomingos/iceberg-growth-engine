@@ -87,8 +87,8 @@ const PlansSection = () => {
               key={index}
               className={`relative p-8 rounded-3xl border backdrop-blur-md transition-all duration-300 hover:shadow-2xl hover:scale-105 ${
                 plan.popular 
-                  ? 'border-ice-accent bg-white/80 shadow-xl ring-2 ring-ice-accent/20' 
-                  : 'border-ice-light/30 bg-white/60 hover:border-ice-accent/50'
+                  ? 'border-ice-accent bg-white/80 shadow-glow-accent ring-2 ring-ice-accent/20' 
+                  : 'border-ice-light/30 bg-white/60 hover:border-ice-accent/50 hover:shadow-glow-border-primary'
               }`}
             >
               {plan.popular && (

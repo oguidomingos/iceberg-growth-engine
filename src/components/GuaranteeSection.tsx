@@ -5,7 +5,7 @@ const GuaranteeSection = () => {
     <section className="py-16 bg-gradient-ice">
       <div className="container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto">
-          <div className="relative p-8 lg:p-12 rounded-3xl border border-ice-accent/30 bg-white/70 backdrop-blur-md shadow-2xl">
+          <div className="relative p-8 lg:p-12 rounded-3xl border border-ice-accent/30 bg-white/70 backdrop-blur-md shadow-2xl shadow-glow-accent hover:shadow-glow-primary transition-shadow duration-300">
             {/* Icon */}
             <div className="flex justify-center mb-6">
               <div className="w-16 h-16 rounded-2xl bg-ice-accent/10 flex items-center justify-center">

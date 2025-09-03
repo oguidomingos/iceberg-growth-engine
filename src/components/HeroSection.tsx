@@ -54,7 +54,7 @@ const HeroSection = () => {
           <div className="relative">
             <div className="relative mx-auto w-fit">
               {/* Glass card */}
-              <div className="backdrop-blur-md bg-white/10 border border-ice-light/30 rounded-3xl p-8 shadow-2xl">
+              <div className="backdrop-blur-md bg-white/10 border border-ice-light/30 rounded-3xl p-8 shadow-2xl shadow-glow-border-secondary hover:shadow-glow-border-primary hover:border-ice-accent/50 transition-all duration-300">
                 <div className="space-y-6">
                   {/* Chart visualization */}
                   <div className="flex items-center justify-between mb-4">

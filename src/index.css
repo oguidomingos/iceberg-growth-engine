@@ -51,6 +51,13 @@ All colors MUST be HSL.
     --glass-bg: hsl(var(--background) / 0.8);
     --glass-border: hsl(var(--ice-light) / 0.2);
     
+    /* Glow effects */
+    --glow-primary: 0 0 20px hsl(var(--ice-accent) / 0.3);
+    --glow-secondary: 0 0 15px hsl(var(--ice-mid) / 0.2);
+    --glow-accent: 0 0 25px hsl(var(--ice-accent) / 0.4);
+    --glow-border-primary: 0 0 10px hsl(var(--ice-accent) / 0.5);
+    --glow-border-secondary: 0 0 8px hsl(var(--ice-light) / 0.3);
+    
     --radius: 1rem;
 
     --sidebar-background: 0 0% 98%;

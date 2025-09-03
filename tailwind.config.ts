@@ -102,6 +102,13 @@ export default {
 				'gradient-ice': 'var(--gradient-ice)',
 				'gradient-deep': 'var(--gradient-deep)',
 			},
+			boxShadow: {
+				'glow-primary': 'var(--glow-primary)',
+				'glow-secondary': 'var(--glow-secondary)', 
+				'glow-accent': 'var(--glow-accent)',
+				'glow-border-primary': 'var(--glow-border-primary)',
+				'glow-border-secondary': 'var(--glow-border-secondary)',
+			},
 			fontFamily: {
 				'montserrat': ['Montserrat', 'sans-serif'],
 			}
